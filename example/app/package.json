@@ -18,6 +18,7 @@
     "postinstall": "linklocal"
   },
   "devDependencies": {
-    "less": "^2.7.2"
+    "less": "^2.7.2",
+    "linklocal": "^2.8.1"
   }
 }

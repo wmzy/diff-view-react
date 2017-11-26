@@ -4,9 +4,8 @@ import DiffView from 'react-diff-view';
 
 export default class Examples extends React.PureComponent {
 
-  render() {
-    const baseText = `
-const http = require('http');
+  state = {
+    baseText: `const http = require('http');
 
 const hostname = '127.0.0.1';
 const port = 3000;
@@ -20,9 +19,8 @@ const server = http.createServer((req, res) => {
 server.listen(port, hostname, () => {
   console.log(\`Server running at http://\${hostname}:\${port}/\`);
 });
-    `
-    const newText = `
-import http = from 'http';
+    `,
+    newText: `import http = from 'http';
 
 const hostname = '127.0.0.1';
 const port = 3000;
@@ -36,7 +34,19 @@ const server = http.createServer((req, res) => {
 server.listen(port, hostname, () => {
   console.log(\`Server running at http://\${hostname}:\${port}/\`);
 });
-    `
+    `,
+  }
+
+  handleBaseTextChange = e => {
+    this.setState({ baseText: e.target.value })
+  }
+
+  handleNewTextChange = e => {
+    this.setState({ newText: e.target.value })
+  }
+
+  render() {
+    const { baseText, newText } = this.state;
     return (<div>
       <h2>
         <a href = "https://github.com/wmzy/react-diff-view/blob/master/example/app/src/ExamplePage.js" className = "right" >
@@ -44,6 +54,18 @@ server.listen(port, hostname, () => {
         </a> Example 
       </h2>
 
+      <div>
+        <form>
+          <label>
+            baseText:
+            <textarea rows={16} cols={87} value={baseText} onChange={this.handleBaseTextChange} />
+          </label>
+          <label>
+            newText:
+            <textarea rows={16} cols={87} value={newText} onChange={this.handleNewTextChange} />
+          </label>
+        </form>
+      </div>
       <DiffView baseText={ baseText } newText={ newText } />
     </div>);
   }

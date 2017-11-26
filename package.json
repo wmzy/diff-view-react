@@ -1,6 +1,6 @@
 {
   "name": "diff-view-react",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Starter project for released React components",
   "main": "dist/index.min.js",
   "files": [

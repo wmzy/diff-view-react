@@ -1,5 +1,5 @@
 {
-  "name": "react-diff-view",
+  "name": "diff-view-react",
   "version": "0.0.1",
   "description": "Starter project for released React components",
   "main": "dist/index.min.js",
@@ -23,13 +23,13 @@
     "test": "cross-env NODE_ENV=test jest --coverage",
     "test:watch": "cross-env NODE_ENV=test jest --watchAll",
     "flow": "flow status",
-    "changelog": "github_changelog_generator -u wmzy -p react-diff-view",
+    "changelog": "github_changelog_generator -u wmzy -p diff-view-react",
     "start": "cd example/app && npm start",
     "deploy": "cd example/app && npm run build && gh-pages -d build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wmzy/react-diff-view.git"
+    "url": "git+https://github.com/wmzy/diff-view-react.git"
   },
   "keywords": [
     "react",
@@ -39,9 +39,9 @@
   "author": "wmzy",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wmzy/react-diff-view/issues"
+    "url": "https://github.com/wmzy/diff-view-react/issues"
   },
-  "homepage": "https://github.com/wmzy/react-diff-view#readme",
+  "homepage": "https://github.com/wmzy/diff-view-react#readme",
   "peerDependencies": {
     "prop-types": "^15.0",
     "react": "^^15.0.0-rc || ^15.0"

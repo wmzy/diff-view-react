@@ -1,23 +1,23 @@
-# React-Diff-View
+# Diff-View-React
 > React components for code diff.
 
 ## Install
 
 ```bash
-npm i react-diff-view
+npm i diff-view-react
 ```
 
 ## Usage
 
 ```javascript
-import DiffView from 'react-diff-view';
+import DiffView from 'diff-view-react';
 
 <DiffView baseText="" newText="" />
 ```
 
 ## Example
 
-> See [example/app](https://github.com/wmzy/react-diff-view/tree/master/example/app)
+> See [example/app](https://github.com/wmzy/diff-view-react/tree/master/example/app)
 
 ## TODO:
 

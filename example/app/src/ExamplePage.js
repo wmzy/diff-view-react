@@ -1,6 +1,6 @@
 import React from 'react';
 
-import DiffView from 'react-diff-view';
+import DiffView from 'diff-view-react';
 
 export default class Examples extends React.PureComponent {
 
@@ -49,7 +49,7 @@ server.listen(port, hostname, () => {
     const { baseText, newText } = this.state;
     return (<div>
       <h2>
-        <a href = "https://github.com/wmzy/react-diff-view/blob/master/example/app/src/ExamplePage.js" className = "right" >
+        <a href = "https://github.com/wmzy/diff-view-react/blob/master/example/app/src/ExamplePage.js" className = "right" >
           <code > &lt; Source &gt; </code>
         </a> Example 
       </h2>

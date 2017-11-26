@@ -21,6 +21,6 @@ import DiffView from 'diff-view-react';
 
 ## TODO:
 
-[ ] split view
-[ ] expand
-[ ] line diff
+- [ ] split view
+- [ ] expand
+- [ ] line diff

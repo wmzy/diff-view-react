@@ -2,7 +2,7 @@
   "name": "diff-view-react-example",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://github.com/wmzy/diff-view-react/",
+  "homepage": "https://wmzy.github.io/diff-view-react/",
   "dependencies": {
     "react": "^15.6.1",
     "react-dom": "^15.6.1",

@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/wmzy/diff-view-react.svg?branch=master)](https://travis-ci.org/wmzy/diff-view-react)
+[![Coverage Status](https://coveralls.io/repos/github/wmzy/diff-view-react/badge.svg?branch=master)](https://coveralls.io/github/wmzy/diff-view-react?branch=master)
 # Diff-View-React
 > React components for code diff.
 

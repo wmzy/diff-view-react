@@ -15,8 +15,8 @@ class DiffView extends React.PureComponent {
   constructor(props) {
     super(props);
 
-    this.baseTextLines = stringAsLines(props.baseText);
-    this.newTextLines = stringAsLines(props.newText);
+    this.baseTextLines = stringAsLines(escape(props.baseText));
+    this.newTextLines = stringAsLines(escape(props.newText));
     this.opcodes = new SequenceMatcher(this.baseTextLines, this.newTextLines).get_opcodes();
 
     this.state = {};
